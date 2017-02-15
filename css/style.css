@@ -10,4 +10,12 @@
   text-align: center;
   border: solid 2px black;
   padding-top: 20px;
+  max-width: 30%;
+}
+
+.custom-flex-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

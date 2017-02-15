@@ -18,6 +18,6 @@ var studentsArray = DATA.students
 var app = new Vue({
   'el': '#app',
   data: {
-    student: studentsArray[0]
+    students: studentsArray
   }
 });

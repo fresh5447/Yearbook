@@ -20,13 +20,13 @@
   </div>
 
   <div class="row">
-    <div id="app" class="col-xs-6 col-xs-offset-3">
+    <div id="app" class="custom-flex-images">
 
 
-      <div class="img-thumbnail-container">
-        <img :src="student.photo" class="img-thumbnail-style"/>
-        <p><strong>{{ student.name }}</strong></p>
-        <p><em>{{'"' + student.quote + '"'}}</em></p>
+      <div v-for="s in students" class="img-thumbnail-container">
+        <img :src="s.photo" class="img-thumbnail-style"/>
+        <p><strong>{{ s.name }}</strong></p>
+        <p><em>{{'"' + s.quote + '"'}}</em></p>
       </div>
 
 
