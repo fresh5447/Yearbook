@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body class="container">
@@ -20,8 +21,17 @@
 
   <div class="row">
     <div id="app" class="col-xs-6 col-xs-offset-3">
-      {{ student }}
-      <img :src="student.photo"/>
+
+
+      <div class="img-thumbnail-container">
+        <img :src="student.photo" class="img-thumbnail-style"/>
+        <p><strong>{{ student.name }}</strong></p>
+        <p><em>{{'"' + student.quote + '"'}}</em></p>
+      </div>
+
+
+
+
     </div>
   </div>
 
